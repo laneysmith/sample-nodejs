@@ -1,5 +1,5 @@
 name: sample-nodejs
-services:
+services_invalid:
 - environment_slug: node-js
   github:
     branch: main
