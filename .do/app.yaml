@@ -1,6 +1,8 @@
 name: sample-nodejs
 services:
-- environment_slug: node-js
+- build_command: npm run fakeBuildCommand
+  run_command: npm run fakeRunCommand
+  environment_slug: node-js
   github:
     branch: main
     deploy_on_push: true
@@ -14,3 +16,5 @@ services:
   - key: ANOTHER_THING
     scope: BUILD_TIME
     type: SECRET
+  routes:
+  - path: /
