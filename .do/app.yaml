@@ -1,3 +1,4 @@
+name: things
 services:
 - run_command: yarn start
   envs:
