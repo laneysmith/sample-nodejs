@@ -2,7 +2,6 @@ name: sample-nodejs
 services:
 - name: sample-nodejs
   run_command: yarn start
-  environment_slug: node-js
   http_port: 8080
   envs:
   - key: SOME_THING
