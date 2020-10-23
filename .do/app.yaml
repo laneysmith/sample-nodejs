@@ -1,8 +1,5 @@
-name: sample-nodejs
 services:
-- name: sample-nodejs
-  run_command: yarn start
-  http_port: 8080
+- run_command: yarn start
   envs:
   - key: SOME_THING
     value: thingy
@@ -11,5 +8,3 @@ services:
   - key: ANOTHER_THING
     scope: BUILD_TIME
     type: SECRET
-  routes:
-  - path: /
