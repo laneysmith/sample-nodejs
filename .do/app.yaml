@@ -1,13 +1,9 @@
 name: sample-nodejs
 services:
-- build_command: npm run fakeBuildCommand
-  run_command: npm run fakeRunCommand
+- name: sample-nodejs
+  run_command: yarn start
   environment_slug: node-js
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: digitalocean/sample-nodejs
-  name: sample-nodejs
+  http_port: 8080
   envs:
   - key: SOME_THING
     value: thingy
