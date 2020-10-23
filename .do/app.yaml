@@ -1,10 +1,10 @@
-name: sample-nodejs
+name: sample-nodejs # required for DetectApp
 services:
-- name: sample-nodejs
+- name: sample-nodejs # not required
   run_command: yarn start
-  environment_slug: node-js
-  http_port: 8080
-  envs:
+  environment_slug: node-js # not required
+  http_port: 8080 # not required, defaults to 8080
+  envs: # not required
   - key: SOME_THING
     value: thingy
     scope: RUN_TIME
@@ -12,5 +12,5 @@ services:
   - key: ANOTHER_THING
     scope: BUILD_TIME
     type: SECRET
-  routes:
+  routes: # not required, defaults to [{ path: '/'}]
   - path: /
