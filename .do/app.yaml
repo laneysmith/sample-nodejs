@@ -4,6 +4,9 @@ services:
   run_command: yarn start
   environment_slug: node-js # not required
   http_port: 8080 # not required, defaults to 8080
+  git:
+    repo_clone_url: https://github.com/laneysmith/sample-nodejs # required
+    branch: with-envs # required
   envs: # not required
   - key: SOME_THING
     value: thingy
