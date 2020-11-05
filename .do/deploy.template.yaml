@@ -1,0 +1,9 @@
+spec:
+  name: sample-nodejs
+  services_invalid:
+  - name: sample-nodejs
+    environment_slug: node-js
+    github:
+      branch: main
+      deploy_on_push: true
+      repo: digitalocean/sample-nodejs
